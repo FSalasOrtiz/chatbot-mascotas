@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Mascotas</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f0f4f8; }
+        h1 { color: #2d6a4f; text-align: center; }
+        #chat-box { background: white; border-radius: 10px; padding: 20px; height: 400px; overflow-y: auto; margin-bottom: 20px; border: 1px solid #ccc; }
+        .mensaje-usuario { text-align: right; margin: 10px 0; }
+        .mensaje-bot { text-align: left; margin: 10px 0; }
+        .burbuja-usuario { background: #2d6a4f; color: white; padding: 10px 15px; border-radius: 15px; display: inline-block; max-width: 70%; }
+        .burbuja-bot { background: #e9ecef; color: #333; padding: 10px 15px; border-radius: 15px; display: inline-block; max-width: 70%; }
+        #input-area { display: flex; gap: 10px; }
+        #pregunta { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; }
+        button { background: #2d6a4f; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #1b4332; }
+        button:disabled { background: #aaa; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <h1>Chatbot Cuidado de Mascotas</h1>
+    <div id="chat-box">
+        <div class="mensaje-bot">
+            <div class="burbuja-bot">Hola! Soy tu asistente de cuidado de mascotas. En que puedo ayudarte?</div>
+        </div>
+    </div>
+    <div id="input-area">
+        <input type="text" id="pregunta" placeholder="Escribe tu pregunta sobre mascotas...">
+        <button id="btn-enviar">Enviar</button>
+    </div>
+
+    <script>
+        var historial = [];
+
+        document.getElementById("btn-enviar").addEventListener("click", enviar);
+        document.getElementById("pregunta").addEventListener("keypress", function(e) {
+            if (e.key === "Enter") enviar();
+        });
+
+        function enviar() {
+            var input = document.getElementById("pregunta");
+            var pregunta = input.value.trim();
+            if (!pregunta) return;
+
+            agregarMensaje(pregunta, "usuario");
+            input.value = "";
+
+            var typing = document.createElement("div");
+            typing.className = "mensaje-bot";
+            typing.id = "typing";
+            typing.innerHTML = "<div class='burbuja-bot'>Escribiendo...</div>";
+            document.getElementById("chat-box").appendChild(typing);
+            document.getElementById("chat-box").scrollTop = document.getElementById("chat-box").scrollHeight;
+
+            document.getElementById("btn-enviar").disabled = true;
+            document.getElementById("btn-enviar").textContent = "Esperando...";
+
+            fetch("/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ pregunta: pregunta, historial: historial })
+            })
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                var t = document.getElementById("typing");
+                if (t) t.remove();
+
+                historial.push({ role: "user", content: pregunta });
+                historial.push({ role: "assistant", content: data.respuesta });
+                agregarMensaje(data.respuesta, "bot");
+
+                document.getElementById("btn-enviar").disabled = false;
+                document.getElementById("btn-enviar").textContent = "Enviar";
+            });
+        }
+
+        function agregarMensaje(texto, tipo) {
+            var chatBox = document.getElementById("chat-box");
+            var div = document.createElement("div");
+            div.className = "mensaje-" + tipo;
+            var burbuja = document.createElement("div");
+            burbuja.className = "burbuja-" + tipo;
+            burbuja.textContent = texto;
+            div.appendChild(burbuja);
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+</body>
+</html>

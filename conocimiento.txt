@@ -1,0 +1,62 @@
+FUENTE 1: Manual de Veterinaria Clínica - Ettinger & Feldman (2017)
+CUIDADO GENERAL DE PERROS:
+- Los perros deben vacunarse contra rabia, moquillo, parvovirus y hepatitis anualmente.
+- La desparasitación interna debe hacerse cada 3 meses en adultos y mensual en cachorros.
+- El peso ideal varía según la raza: razas pequeñas 2-10kg, medianas 10-25kg, grandes 25-45kg.
+- Los perros necesitan ejercicio diario: razas pequeñas 30 min, medianas 1 hora, grandes 2 horas.
+- El baño debe ser cada 2-4 semanas dependiendo de la raza y actividad.
+- Los dientes deben cepillarse 2-3 veces por semana para evitar sarro.
+
+FUENTE 2: Manual de Felinos - Sherding (2019)
+CUIDADO GENERAL DE GATOS:
+- Los gatos necesitan vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia) anualmente.
+- También se recomienda vacuna contra rabia y leucemia felina.
+- Los gatos son carnívoros obligados, necesitan proteína animal en su dieta.
+- Deben tener agua fresca siempre disponible, preferiblemente en fuente de agua corriente.
+- La caja de arena debe limpiarse diariamente y cambiarse completamente cada semana.
+- Los gatos necesitan rascadores para mantener sus uñas y marcar territorio.
+- El cepillado del pelo debe ser diario en razas de pelo largo y semanal en pelo corto.
+
+FUENTE 3: Guía de Nutrición Animal - Case et al. (2021)
+ALIMENTACIÓN:
+- Los perros y gatos NO deben consumir: chocolate, uvas, pasas, cebollas, ajo, xilitol, aguacate, alcohol, cafeína, macadamia.
+- Los cachorros deben comer 3-4 veces al día hasta los 6 meses, luego 2 veces al día.
+- Los gatos adultos deben comer 2-3 veces al día en porciones controladas.
+- La comida debe ser balanceada y adecuada para la edad: cachorro, adulto, senior.
+- Los perros senior (mayores de 7 años) necesitan dietas bajas en sodio y fósforo.
+- El agua debe cambiarse diariamente y el recipiente lavarse cada 2 días.
+
+FUENTE 4: Atlas de Enfermedades Infecciosas Veterinarias - Greene (2020)
+ENFERMEDADES COMUNES EN PERROS:
+- Parvovirus: virus altamente contagioso, causa vómitos y diarrea con sangre, mortal sin tratamiento. Prevención: vacuna.
+- Moquillo: enfermedad viral que afecta sistema respiratorio y nervioso. Prevención: vacuna.
+- Leptospirosis: bacteria transmitida por agua contaminada, puede contagiarse a humanos. Prevención: vacuna anual.
+- Sarna: enfermedad de la piel causada por ácaros, produce picazón intensa y pérdida de pelo.
+- Otitis: infección del oído, síntomas: sacudir la cabeza, rascarse la oreja, mal olor.
+
+ENFERMEDADES COMUNES EN GATOS:
+- Leucemia felina (FeLV): virus que debilita el sistema inmune, se transmite por contacto directo.
+- Virus de inmunodeficiencia felina (VIF): similar al VIH humano, se transmite por mordeduras.
+- Toxoplasmosis: parásito en heces de gatos, riesgo para embarazadas y personas inmunodeprimidas.
+- Enfermedad del tracto urinario inferior felino (FLUTD): obstrucción urinaria, más común en machos castrados.
+
+FUENTE 5: Guía de Primeros Auxilios para Mascotas - AVMA (2022)
+PRIMEROS AUXILIOS:
+- Si una mascota ingiere algo tóxico: llamar al veterinario inmediatamente, no inducir vómito sin indicación médica.
+- Golpe de calor: mojar al animal con agua fría (no helada), ventilar y llevar al veterinario urgente.
+- Heridas: limpiar con agua y suero, cubrir con gasa, no usar alcohol ni agua oxigenada directamente.
+- Convulsiones: no sujetar al animal, alejar objetos peligrosos, cronometrar la convulsión y llamar al veterinario.
+- Atragantamiento: abrir la boca con cuidado, si se ve el objeto intentar retirarlo, si no llevar urgente al veterinario.
+
+REPRODUCCIÓN Y ESTERILIZACIÓN:
+- La esterilización en hembras reduce riesgo de cáncer de mama y elimina riesgo de piometra (infección uterina).
+- En machos reduce comportamientos agresivos y riesgo de cáncer testicular.
+- La edad recomendada para esterilizar es entre 6-12 meses dependiendo de la raza.
+- Una gata puede tener 2-3 camadas al año con 4-6 gatitos por camada.
+- Un perro hembra puede tener 2 celos al año.
+
+COMPORTAMIENTO Y BIENESTAR:
+- Los perros son animales sociales, no deben estar solos más de 8 horas seguidas.
+- Los gatos necesitan enriquecimiento ambiental: juguetes, rascadores, lugares altos para observar.
+- El estrés en mascotas puede manifestarse como: pérdida de apetito, agresividad, esconderse, lamerse en exceso.
+- Los cachorros deben socializarse entre las 3 y 12 semanas de vida para evitar miedos futuros.
